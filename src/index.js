@@ -3,7 +3,7 @@ const app = express();
 
 app.use('/api/hello', (req, res) => {
     const who = req.query.name || 'Friendly node server';
-    res.json({ hello: who }).send();
+    res.json({ hello: who });
 })
 
 app.listen(8001, () => {
